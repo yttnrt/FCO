@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trinity E. Pestin — Web Development Coursework</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f7f6f2;
+      --ink: #1e1d1b;
+      --muted: #6b6862;
+      --line: #ddd9cf;
+      --accent: #2f5d50;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 80px 24px;
+    }
+    main {
+      width: 100%;
+      max-width: 620px;
+    }
+    .masthead {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 8px;
+    }
+    .masthead h1 {
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      font-size: 2rem;
+      margin: 0 0 6px;
+      letter-spacing: -0.01em;
+    }
+    .masthead p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .masthead .note {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    ul.index {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul.index li {
+      border-bottom: 1px solid var(--line);
+    }
+    ul.index a {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px 0;
+      text-decoration: none;
+      color: inherit;
+    }
+    ul.index a:hover .title,
+    ul.index a:focus-visible .title {
+      color: var(--accent);
+    }
+    ul.index a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+    .entry-text {
+      min-width: 0;
+    }
+    .title {
+      display: block;
+      font-family: 'Source Serif 4', serif;
+      font-weight: 600;
+      font-size: 1.15rem;
+      transition: color 0.15s ease;
+    }
+    .desc {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .arrow {
+      flex-shrink: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      transform: translateX(0);
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+    ul.index a:hover .arrow,
+    ul.index a:focus-visible .arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    @media (max-width: 480px) {
+      body { padding: 56px 20px; }
+      .masthead h1 { font-size: 1.65rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="masthead">
+      <h1>Trinity E. Pestin</h1>
+      <p>BSIT, Panpacific University FCO Final Part</p>
+    </div>
+
+    <ul class="index">
+      <li>
+        <a href="personal.html">
+          <span class="entry-text">
+            <span class="title">Personal Space</span>
+            <span class="desc">Profile page built in plain HTML</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="landing-css.html">
+          <span class="entry-text">
+            <span class="title">Landing Page — CSS</span>
+            <span class="desc">Blissful Bites Cafe, styled with custom CSS</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+      <li>
+        <a href="landing-bootstrap.html">
+          <span class="entry-text">
+            <span class="title">Landing Page — Bootstrap</span>
+            <span class="desc">Personal site built with Bootstrap 5</span>
+          </span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>&copy; 2026 Trinity E. Pestin</footer>
+  </main>
+
+</body>
+</html>
